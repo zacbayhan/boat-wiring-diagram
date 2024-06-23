@@ -13,6 +13,8 @@ stateDiagram
 
     NegativeBussBar1 %% Blue Sea System 2127 MaxiBus BusBar 
     NegativeBussBar2
+
+    BilgePump
      
 
     [*] --> BatteryCharger: 120 Volts
@@ -25,6 +27,7 @@ stateDiagram
     BatterySwitch --> [*]: Starter Motor
 
     HouseBattery --> DcSubPannel1
+    DcSubPannel1 --> BilgePump
 
     StarterBattery --> NegativeBussBar1: Terminal 1
     HouseBattery --> NegativeBussBar1: Terminal 2
